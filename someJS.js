@@ -20,15 +20,22 @@ let values = ['Ace', 'King', 'Queen', 'Jack',
     'Ten', 'Nine', 'Eight', 'Seven', 'Six',
     'Five', 'Four', 'Three', 'Two'];
 
-let deck = [];
-
-for (let suitIdx = 0; suitIdx < suits.length; suitIdx++) {
-    for (let valueIdx = 0; valueIdx < values.length; valueIdx++) {
-        deck.push( values[valueIdx] + " of " + suits[suitIdx] );
+function createDeck() {
+    let deck = [];
+    for (let suitIdx = 0; suitIdx < suits.length; suitIdx++) {
+        for (let valueIdx = 0; valueIdx < values.length; valueIdx++) {
+            deck.push( values[valueIdx] + " of " + suits[suitIdx] );
+        }
     }
+    return deck;
 }
 
-let playerCards = [ deck[0], deck[2] ];
+function getNextCard() {
+    return deck.shift();
+}
+
+let deck = createDeck();
+let playerCards = [ getNextCard(), getNextCard() ];
 
 console.log("Welcome to BlackJack!");
 console.log("You are delt: ");
