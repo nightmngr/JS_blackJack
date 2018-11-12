@@ -9,7 +9,7 @@
  * za JS da znae deka postojat site
  * elementi sto se dodadeni vo HTML-ot
  **************************************/
-
+/* test */
 
 
 /*
