@@ -1,7 +1,7 @@
 //
 // arrays
 
-console.log('# Arrays #');
+console.log('# arrays #');
 
 let arr1 = ['test', 2, 4];
 console.log(arr1);
@@ -40,14 +40,39 @@ console.log(nestedArr[1][0]); // Output: 2
 
 
 
+
 // loops
 
 console.log('');
 console.log('');
-console.log('# Loops #');
+console.log('# loops #');
 
 let vacationSpots = ['Mozambique', 'Thailand', 'Bolivia'];
 
 for (let vacationSpotIndex = vacationSpots.length -1; vacationSpotIndex >= 0; vacationSpotIndex--) {
   console.log('I would love to visit ' + vacationSpots[vacationSpotIndex]);
 }
+// let i = 0
+// while(i<10){
+    // nesto;
+    // i++;
+// }
+
+// do{
+//     i++;
+    // nesto;
+// } while (i<10);
+
+// vo loops:
+// if(uslov1 === uslov2) {
+    // break;
+// }
+
+
+
+
+// higher-order functions
+
+console.log('');
+console.log('');
+console.log('# higher-order functions #');
